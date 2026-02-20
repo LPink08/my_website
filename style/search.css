@@ -21,4 +21,9 @@ body {
     background: white;
     border: 0;
     font-size: 18px;
+    padding: 15px;
+}
+
+.input:focus {
+    outline: none;
 }
