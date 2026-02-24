@@ -18,7 +18,7 @@ body {
 .bg {
     width: 100vw;
     height: 100vh;
-    background-image: url('pink background.jpg');
+    background-image: url('../images/pink background.jpg');
     position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
