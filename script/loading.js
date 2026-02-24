@@ -1,6 +1,9 @@
 loadText = document.querySelector('.loading-text')
 bg = document.querySelector('.bg')
 
-loadText.innerText = "0%"
+load = 0
+
+
+loadText.innerText = `${load}%`
 loadText.style.opacity = "1"
 bg.style.filter = "blur(30px)"
