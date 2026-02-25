@@ -12,5 +12,8 @@ body {
 }
 
 .square {
-    
+    background: blue;
+    position: relative;
+    height: 50px;
+    width: 50px;
 }
