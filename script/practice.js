@@ -1,6 +1,5 @@
 box = document.querySelector('.box')
 
-
 size = 50
 direction = "bigger"
 
@@ -11,7 +10,7 @@ function sizing () {
     {
         direction = "smaller"
     }
-    if (size < 50)
+    else if (size < 50)
     {
         direction = "bigger"
     }
