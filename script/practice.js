@@ -1,1 +1,2 @@
-box = document.querySelector()
+box = document.querySelector('.box')
+
