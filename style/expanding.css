@@ -29,7 +29,7 @@ body {
     transition: flex 1s ease-in;
 }
 
-h3 {
+.panel h3 {
     position: absolute;
     bottom: 20px;
     left: 20px;
