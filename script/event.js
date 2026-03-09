@@ -1,5 +1,5 @@
-clickBox = document.querySelector('click')
-spinBox = document.querySelector('click')
+clickBox = document.querySelector('.click')
+spinBox = document.querySelector('.spin')
 
 colors = ['blue', 'green', 'purple', 'red']
 index = 0
