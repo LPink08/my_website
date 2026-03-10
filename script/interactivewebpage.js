@@ -4,7 +4,7 @@ colors = ['blue', 'green', 'purple', 'red', 'pink', 'orange', 'yellow']
 let index = 0
 
 box.addEventListener('click', () => {
-    box.style.background = colors[index]
+    style.body.background = colors[index]
     index = index + 1
     if (index == colors.length){
         index = 0
