@@ -2,7 +2,7 @@ clickBox = document.querySelector('.click')
 //spinBox = document.querySelector('.spin')
 hoverBox = document.querySelector('.hover')
 moveBox = document.querySelector('.move')
-//dblclickBox = document.querySelector('.dblclick')
+dblclickBox = document.querySelector('.dblclick')
 
 colors = ['blue', 'green', 'purple', 'red']
 index = 0
@@ -50,3 +50,4 @@ document.addEventListener('keyup', (event) => {
     moveBox.style.left = `${positionX}px`
 })
 
+dblclickBox.addEventListener('dblclick')
