@@ -50,9 +50,19 @@ document.addEventListener('keyup', (event) => {
     moveBox.style.left = `${positionX}px`
 })
 
-dblclickBox.addEventListener('dblclick' () => {
+dblclickBox.addEventListener('dblclick', () => {
     dblclickBox.style.width = "10px"
     dblclickBox.style.height = "10px"
     dblclickBox.innerHTML = ""
     dblclickBox.style.opacity = .3
+})
+
+dblclickBox.addEventListener('keyup', (event) => {
+    console.log(event.key)
+    if (event.key == 'j'){
+        dblclickBox.style.width = "250px"
+        dblclickBox.style.height = "60px"
+        dblclickBox.innerHTML = "Double Click to Make me Disappear! Press j to bring me back!"
+        dblclickBox.style.opacity = 
+    }
 })
