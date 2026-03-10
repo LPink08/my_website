@@ -59,7 +59,7 @@ body {
     }
 }
 
-#spin {
+.spin {
     animation: spinner .3s linear infinite;
     animation-play-state: paused;
 }
