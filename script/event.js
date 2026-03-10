@@ -19,7 +19,8 @@ clickBox.addEventListener('click', () => {
 const list = ['running', 'paused']
 let index = 0
 spinBox.addEventListener('click', () => {
-    spinBox.classList.toggle('start')
+    spinBox.style.animationPlayState = list[index]
+    
 })
 
 hoverBox.addEventListener('mouseover', () => {
