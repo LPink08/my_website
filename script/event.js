@@ -47,6 +47,6 @@ document.addEventListener('keyup', (event) => {
         positionX = positionX - 10
     }
     moveBox.style.top = `${positionY}px`
-    moveBox.style.right = `${positionX}px`
+    moveBox.style.left = `${positionX}px`
 })
 
