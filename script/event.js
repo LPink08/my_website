@@ -16,9 +16,11 @@ clickBox.addEventListener('click', () => {
     clickBox.style.color = 'white'
 })
 
-//spinBox.addEventListener('click', () => {
-    //spinBox.classList.toggle('start')
-//})
+const list = ['running', 'paused']
+let index = 0
+spinBox.addEventListener('click', () => {
+    spinBox.classList.toggle('start')
+})
 
 hoverBox.addEventListener('mouseover', () => {
     hoverBox.innerHTML = "Don't hover over me!"
