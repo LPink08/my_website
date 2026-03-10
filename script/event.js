@@ -5,7 +5,7 @@ moveBox = document.querySelector('.move')
 dblclickBox = document.querySelector('.dblclick')
 
 colors = ['blue', 'green', 'purple', 'red']
-index = 0
+let index = 0
 
 clickBox.addEventListener('click', () => {
     clickBox.style.background = colors[index]
