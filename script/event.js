@@ -63,7 +63,7 @@ document.addEventListener('keyup', (event) => {
     if (event.key == 'j'){
         dblclickBox.style.width = "250px"
         dblclickBox.style.height = "60px"
-        dblclickBox.innerHTML = "<h3>Double Click to Make me Disappear! <br> Press 'j' to bring me back!</h3>"
+        dblclickBox.innerHTML = "<h3>Double Click to Disappear! <br> Press 'j' to come back!</h3>"
         dblclickBox.style.opacity = 1
     }
 })
