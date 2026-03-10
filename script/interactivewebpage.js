@@ -1,7 +1,7 @@
 box = document.querySelector('.box')
 body = document.querySelector('body')
 
-console.log(body)
+// console.log(body)
 
 colors = ['blue', 'green', 'purple', 'red', 'pink', 'orange', 'yellow']
 let index = 0
