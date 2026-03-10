@@ -1,4 +1,4 @@
-box = document.querySelector('box')
+box = document.querySelector('.box')
 
 colors = ['blue', 'green', 'purple', 'red', 'pink', 'orange', 'yellow']
 let index = 0
