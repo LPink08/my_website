@@ -46,15 +46,20 @@ body {
     font-size: 20px;
 }
 
-.start {
+/* .start {
     animation: spin 1s linear infinite;
-}
+} */
 
-@keyframes spin {
+@keyframes spinner {
     from {
         transform: rotate(0deg);
     }
     to {
         transform: rotate(360deg);
     }
+}
+
+#spin {
+    animation: spinner .3s linear infinite;
+    animation-play-state: paused;
 }
