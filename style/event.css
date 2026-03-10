@@ -43,7 +43,7 @@ body {
     position: absolute;
     bottom: 50px;
     right: 50px;
-    font-size: 
+    font-size: 20px;
 }
 
 @keyframes spinner {
