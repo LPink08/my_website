@@ -17,7 +17,7 @@ clickBox.addEventListener('click', () => {
 })
 
 const list = ['running', 'paused']
-let index = 0
+index = 0
 spinBox.addEventListener('click', () => {
     spinBox.style.animationPlayState = list[index]
     index = (index + 1) % 2
