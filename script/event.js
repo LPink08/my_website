@@ -50,4 +50,9 @@ document.addEventListener('keyup', (event) => {
     moveBox.style.left = `${positionX}px`
 })
 
-dblclickBox.addEventListener('dblclick')
+dblclickBox.addEventListener('dblclick' () => {
+    dblclickBox.style.width = "10px"
+    dblclickBox.style.height = "10px"
+    dblclickBox.innerHTML = ""
+    dblclickBox.style.opacity = .3
+})
