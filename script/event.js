@@ -41,10 +41,10 @@ document.addEventListener('keyup', (event) => {
         positionY = positionY - 10
     }
     else if (event.key == 'ArrowLeft') {
-        positionX = positionX + 10
+        positionX = positionX - 10
     }
     else if (event.key == 'ArrowRight') {
-        positionX = positionX - 10
+        positionX = positionX + 10
     }
     moveBox.style.top = `${positionY}px`
     moveBox.style.left = `${positionX}px`
