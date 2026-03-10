@@ -1,5 +1,5 @@
 clickBox = document.querySelector('.click')
-//spinBox = document.querySelector('.spin')
+spinBox = document.querySelector('.spin')
 hoverBox = document.querySelector('.hover')
 moveBox = document.querySelector('.move')
 dblclickBox = document.querySelector('.dblclick')
