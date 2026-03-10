@@ -1,5 +1,5 @@
 box = document.querySelector('.box')
-// body = document.querySelector('body')
+body = document.querySelector('body')
 
 console.log(body)
 
