@@ -1,10 +1,4 @@
 buttons = document.querySelector('.buttons')
-// applause = document.querySelector('.applause')
-// boo = document.querySelector('.boo')
-// gasp = document.querySelector('.gasp')
-// tada = document.querySelector('.tada')
-// victory = document.querySelector('.victory')
-// wrong = document.querySelector('.wrong')
 
 sounds = ['applause', 'boo', 'gasp', 'tada', 'victory', 'wrong']
 
