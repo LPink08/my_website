@@ -155,3 +155,10 @@ h1 {
     left: 0;
     transition: all 0.3s ease-in-out;
 }
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
