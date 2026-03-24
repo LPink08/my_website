@@ -4,7 +4,7 @@ const game_container = document.getElementById('game-container')
 const start_btn = document.getElementById('start-btn')
 const timeE1 = document.getElementById('time')
 const scoreE1 = document.getElementById('score')
-const message = document.getElementById('message')
+const messageE1 = document.getElementById('message')
 let seconds = 0
 let score = 0
 let selected_insect = {}
@@ -76,8 +76,8 @@ function addInsects() {
 function increaseScore() {
     score = score + 1
     scoreE1.innerHTML = `Score: ${score}`
-    if (score > 19) {
-        message.classList.add('visible')
+    if (score > 30) {
+        messageE1.classList.add('visible')
     }
 }
 
