@@ -45,7 +45,7 @@ screens[0].classList.add('up')
 
 // function getRandomLocation() {
 
-}
+// }
 
 
 
