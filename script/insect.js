@@ -5,7 +5,7 @@ const start_btn = document.getElementById('start-btn')
 const timeE1 = document.getElementById('time')
 const scoreE1 = document.getElementById('score')
 const messageE1 = document.getElementById('message')
-
+//fix the link to home/insect page when it switches screens
 let seconds = 0
 let score = 0
 let selected_insect = {}
