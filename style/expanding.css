@@ -61,6 +61,10 @@ body {
 }
 
 .nav a {
+    color: Thistle;
+}
+
+.nav a:hover {
     color: 
 }
 
