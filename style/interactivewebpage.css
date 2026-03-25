@@ -28,3 +28,17 @@ body {
     font-size: 20px;
     color: white;
 }
+
+.nav.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.nav {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+
+}
