@@ -64,3 +64,15 @@ body {
     animation: spinner .3s linear infinite;
     animation-play-state: paused;
 }
+
+.nav.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.nav {
+    position: fixed;
+    top: 20px;
+}
