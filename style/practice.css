@@ -16,3 +16,21 @@ body {
     height: 50px;
     width: 50px;
 }
+
+.nav.container {
+    padding: 20px 0px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    top: 0px;
+    left: 20px;
+    position: fixed;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav a {
+    color:
+}

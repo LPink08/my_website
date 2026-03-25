@@ -48,7 +48,8 @@ body {
 }
 
 .nav {
-    top: 0;
+    top: 0px;
+    left: 20px;
     position: fixed;
     transition: all 0.3s ease-in-out;
 }
@@ -65,7 +66,8 @@ body {
 }
 
 .nav a:hover {
-    color: 
+    color: LightPink;
+    font-weight: bold;
 }
 
 
