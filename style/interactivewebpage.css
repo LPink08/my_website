@@ -44,5 +44,10 @@ body {
 }
 
 .nav a {
-    
+    color: rgb(0, 0, 0);
+}
+
+.nav a:hover {
+    color: #a9a9a9;
+    font-weight: bold;
 }
