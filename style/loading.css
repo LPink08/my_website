@@ -27,3 +27,22 @@ body {
     z-index: -1;
     filter: blur(100px);
 }
+
+.nav.container {
+    padding: 20px 0px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.nav {
+    top: 0px;
+    left: 20px;
+    position: fixed;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav a:hover {
+    font-weight: bold;
+    color: MediumPurple;
+}

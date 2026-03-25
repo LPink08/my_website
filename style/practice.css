@@ -32,5 +32,10 @@ body {
 }
 
 .nav a {
-    color:
+    color: MediumBlue;
+}
+
+.nav a:hover {
+    color: blue;
+    font-weight: bold;
 }
