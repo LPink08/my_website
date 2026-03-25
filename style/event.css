@@ -81,5 +81,10 @@ body {
 }
 
 .nav a {
-    color: yellow;
+    color: rgb(0, 0, 0);
+}
+
+.nav a:hover {
+    color: red;
+    font-weight: bold;
 }
