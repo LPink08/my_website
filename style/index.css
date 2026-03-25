@@ -9,7 +9,7 @@
 
 body {
     font-family: "Rubik", sans-serif;
-    background: MediumVioletRed;
+    background: LavenderBlush;
 }
 
 .container {
@@ -19,5 +19,5 @@ body {
 
 .nav {
     position: fixed;
-    background: 
+    background: DeepPink;
 }
