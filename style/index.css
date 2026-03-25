@@ -9,5 +9,15 @@
 
 body {
     font-family: "Rubik", sans-serif;
-    background: PaleVioletRed;
+    background: MediumVioletRed;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav {
+    position: fixed;
+    background: 
 }
