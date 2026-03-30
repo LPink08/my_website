@@ -10,6 +10,8 @@
 body {
     font-family: "Rubik", sans-serif;
     background: LavenderBlush;
+    overflow-x: hidden;
+    padding-bottom: 50px;
 }
 
 .container {
@@ -20,10 +22,10 @@ body {
 .nav {
     position: fixed;
     background: DeepPink;
-    top: 0px;
-    right: 0px;
-    left: 0px;
-    transition: 0.3s ease-in-out;
+    top: 0;
+    right: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
     height: 80px;
 }
 
@@ -35,10 +37,11 @@ body {
 }
 
 .logo a {
+    display: flex;
     color: white;
     font-size: 24px;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     padding: 0px 0px 0px 0px;
 }
 
