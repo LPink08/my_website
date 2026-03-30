@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1350px;
     margin: 0 auto;
 }
 
@@ -36,13 +36,22 @@ body {
     padding: 20px 0px;
 }
 
+.nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav a:hover {
+    font-weight: bold;
+    color: 
+}
+
 .logo a {
     display: flex;
-    color: white;
-    font-size: 24px;
+    font-size: 28px;
     top: 0px;
     left: 0px;
-    padding: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 11px;
 }
 
 .nav ul {
@@ -51,4 +60,5 @@ body {
     justify-content: space-between;
     list-style-type: none;
     padding: 15px;
+    font-size: 17px;
 }
