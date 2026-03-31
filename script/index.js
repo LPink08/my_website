@@ -17,7 +17,7 @@ btn.addEventListener('click', () => {
 })
 
 function changeMode() {
-    btn.addEventListener('click', () => {
+    // btn.addEventListener('click', () => {
     hero.classList.add('mode')
     nav.classList.add('mode')
     btn.classList.add('mode')
@@ -28,7 +28,7 @@ function changeMode() {
 }
 
 function fixMode() {
-    btn.addEventListener('click', () => {
+    // btn.addEventListener('click', () => {
     hero.classList.remove('mode')
     nav.classList.remove('mode')
     nav.classList.add('active')
