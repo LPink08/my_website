@@ -51,7 +51,7 @@ window.addEventListener('scroll', () => {
             nav.classList.add('mode')
         }
     }
-    else {
+    else if (fixMode()){
         if (scrollY > 500) {
             nav.classList.add('active')
         }
