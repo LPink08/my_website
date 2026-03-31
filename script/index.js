@@ -1,4 +1,5 @@
 nav = document.querySelector('.nav')
+btn = document.querySelector('.btn')
 
 window.addEventListener('scroll', () => {
     console.log(scrollY)
@@ -8,4 +9,8 @@ window.addEventListener('scroll', () => {
     else {
         nav.classList.remove('active')
     }
+})
+
+btn.addEventListener('click', () => {
+    
 })

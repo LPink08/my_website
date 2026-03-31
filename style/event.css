@@ -31,24 +31,28 @@ body {
     position: absolute;
     top: 50px;
     left: 50px;
+    cursor: pointer;
 }
 
 .move {
     position: absolute;
     bottom: 50px;
     left: 50px;
+    cursor: pointer;
 }
 
 .hover {
     position: absolute;
     top: 50px;
     right: 50px;
+    cursor: pointer;
 }
 
 .dblclick {
     position: absolute;
     bottom: 50px;
     right: 50px;
+    cursor: pointer;
 }
 
 @keyframes spinner {
@@ -63,6 +67,7 @@ body {
 .spin {
     animation: spinner .3s linear infinite;
     animation-play-state: paused;
+    cursor: pointer;
 }
 
 .nav.container {
