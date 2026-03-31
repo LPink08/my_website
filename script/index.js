@@ -12,5 +12,5 @@ window.addEventListener('scroll', () => {
 })
 
 btn.addEventListener('click', () => {
-    btn.classList.add('active')
+    
 })
