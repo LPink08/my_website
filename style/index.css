@@ -103,7 +103,7 @@ body {
 }
 
 .nav.active {
-    background-color: LavenderBlush;
+    background: LavenderBlush;
 }
 
 .nav.active a {
@@ -131,3 +131,30 @@ body {
     color: #ffffff;
 }
 
+.hero.active {
+    background-image: url('../images/purple beach background.avif');
+}
+
+.nav.active2 {
+    background: Purple;
+}
+
+.btn.active {
+    background: purple;
+}
+
+.content.active h3 {
+    color: DarkMagenta;
+}
+
+.content.active p {
+    color: DarkMagenta;
+}
+
+.nav.active3 {
+    background: #ecbfff;
+}
+
+.nav.active3 a{
+    color: DarkMagenta;
+}
