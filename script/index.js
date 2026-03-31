@@ -4,6 +4,12 @@ hero = document.querySelector('.hero')
 content = document.querySelector('.content')
 body = document.querySelector('body')
 
+const list = ['pink', 'purple']
+index = 0
+btn.addEventListener('click', () => {
+    index = (index + 1) % 2
+})
+
 function changeMode() {
     btn.addEventListener('click', () => {
     hero.classList.add('mode')
