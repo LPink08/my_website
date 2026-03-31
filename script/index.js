@@ -8,6 +8,12 @@ const list = ['pink', 'purple']
 index = 0
 btn.addEventListener('click', () => {
     index = (index + 1) % 2
+    if (index == 1){
+        changeMode()
+    }
+    else {
+        fixMode()
+    }
 })
 
 function changeMode() {
@@ -18,6 +24,18 @@ function changeMode() {
     content.classList.add('mode')
     body.style.background = '#ecbfff';
     // nav.classList.add('mode2')
+    })
+}
+
+function fixMode() {
+    btn.addEventListener('click', () => {
+    hero.classList.remove('mode')
+    nav.classList.remove('mode')
+    nav.classList.add('active')
+    btn.classList.remove('mode')
+    content.classList.remove('mode')
+    body.style.background = 'LavenderBlush';
+    // nav.classList.remove('mode2')
     })
 }
 
