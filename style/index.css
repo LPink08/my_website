@@ -131,30 +131,30 @@ body {
     color: #ffffff;
 }
 
-.hero.active {
+.hero.mode {
     background-image: url('../images/purple beach background.avif');
 }
 
-.nav.active2 {
+.nav.mode {
     background: Purple;
 }
 
-.btn.active {
+.btn.mode {
     background: purple;
 }
 
-.content.active h3 {
+.content.mode h3 {
     color: DarkMagenta;
 }
 
-.content.active p {
+.content.mode p {
     color: DarkMagenta;
 }
 
-.nav.active3 {
+.nav.mode2 {
     background: #ecbfff;
 }
 
-.nav.active3 a{
+.nav.mode2 a{
     color: DarkMagenta;
 }
