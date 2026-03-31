@@ -13,5 +13,5 @@ window.addEventListener('scroll', () => {
 })
 
 btn.addEventListener('click', () => {
-    hero.style.background-image
+    hero.classList.add('active')
 })
