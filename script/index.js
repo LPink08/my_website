@@ -1,5 +1,6 @@
 nav = document.querySelector('.nav')
 btn = document.querySelector('.btn')
+hero = document.querySelector('.hero')
 
 window.addEventListener('scroll', () => {
     console.log(scrollY)
@@ -12,5 +13,5 @@ window.addEventListener('scroll', () => {
 })
 
 btn.addEventListener('click', () => {
-    
+    hero.style.background-image
 })
