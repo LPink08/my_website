@@ -11,7 +11,7 @@ body {
     font-family: "Rubik", sans-serif;
     overflow-x: hidden;
     padding-bottom: 50px;
-    background: LavenderBlush;
+    background: #ffd4e6;
 }
 
 .container {
@@ -43,7 +43,7 @@ body {
 
 .nav a:hover {
     font-weight: bold;
-    color: LavenderBlush;
+    color: #ffd4e6;
 }
 
 .logo a {
@@ -89,6 +89,18 @@ body {
     letter-spacing: 1px;
 }
 
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #000000;
+    opacity: 0.3;
+}
+
 .content h3 {
     font-size: 150%;
     margin: 20px 40px;
@@ -103,7 +115,7 @@ body {
 }
 
 .nav.active {
-    background: LavenderBlush;
+    background: #ffd4e6;
 }
 
 .nav.active a {
@@ -131,24 +143,40 @@ body {
     color: #ffffff;
 }
 
+.btn:hover {
+    opacity: 0.8;
+}
+
 .hero.mode {
     background-image: url('../images/purple beach background.avif');
 }
 
+.hero.mode::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #000000;
+    opacity: 0.5;
+}
+
 .nav.mode {
-    background: Purple;
+    background: #490c63;
 }
 
 .btn.mode {
-    background: purple;
+    background: #490c63;
 }
 
 .content.mode h3 {
-    color: DarkMagenta;
+    color: #490c63;
 }
 
 .content.mode p {
-    color: DarkMagenta;
+    color: #490c63;
 }
 
 .nav.mode2 {
@@ -156,5 +184,5 @@ body {
 }
 
 .nav.mode2 a{
-    color: DarkMagenta;
+    color: #631087;
 }
