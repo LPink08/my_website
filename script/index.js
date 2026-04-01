@@ -17,26 +17,20 @@ btn.addEventListener('click', () => {
 })
 
 function changeMode() {
-    btn.addEventListener('click', () => {
     hero.classList.add('mode')
     nav.classList.add('mode')
     btn.classList.add('mode')
     content.classList.add('mode')
     body.style.background = '#ecbfff';
-    // nav.classList.add('mode2')
-    })
 }
 
 function fixMode() {
-    btn.addEventListener('click', () => {
     hero.classList.remove('mode')
     nav.classList.remove('mode')
     nav.classList.add('active')
     btn.classList.remove('mode')
     content.classList.remove('mode')
     body.style.background = 'LavenderBlush';
-    // nav.classList.remove('mode2')
-    })
 }
 
 window.addEventListener('scroll', () => {
@@ -60,3 +54,25 @@ window.addEventListener('scroll', () => {
         }
     }
 })
+
+
+
+// btn.addEventListener('click', () => {
+//     hero.classList.add('mode')
+//     nav.classList.add('mode')
+//     btn.classList.add('mode')
+//     content.classList.add('mode')
+//     body.style.background = '#ecbfff';
+//     // nav.classList.add('mode2')
+//     })
+
+
+// btn.addEventListener('click', () => {
+//     hero.classList.remove('mode')
+//     nav.classList.remove('mode')
+//     nav.classList.add('active')
+//     btn.classList.remove('mode')
+//     content.classList.remove('mode')
+//     body.style.background = 'LavenderBlush';
+//     // nav.classList.remove('mode2')
+//     })
