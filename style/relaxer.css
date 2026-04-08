@@ -115,3 +115,26 @@ body {
 .container.shrink {
     animation: shrink 3s linear forwards;
 }
+
+.nav {
+    position: fixed;
+    top: 0px;
+    left: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.nav a {
+    color: #ffffff;
+}
+
+.nav a:hover {
+    color: #55b7a4;
+    font-weight: bold;
+}
