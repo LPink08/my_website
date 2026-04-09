@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+.front-wall {
+    background: black;
+    height: 350px;
+    width: 350px;
+    display: flex;
+    position: fixed;
+    right: 300px;
+    bottom: 100px;
+}
+
+.grass {
+    background: green;
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+
+.slanted-wall {
+    background: Tan;
+    height: 350px;
+    width: 350px;
+    display: flex;
+    position: fixed;
+    right: 650px;
+    bottom: 100px;
+    /* animation: */
+}
+
+@keyframes rotate {
+    from
+}
