@@ -30,9 +30,14 @@
     position: fixed;
     right: 650px;
     bottom: 100px;
-    /* animation: */
+    animation: rotate linear;
 }
 
 @keyframes rotate {
-    from
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(150deg);
+    }
 }
