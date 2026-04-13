@@ -3,11 +3,11 @@
 }
 
 .front-wall {
-    background: black;
+    background: bisque;
     height: 350px;
     width: 350px;
     display: flex;
-    position: fixed;
+    position: absolute;
     right: 300px;
     bottom: 100px;
 }
@@ -30,7 +30,7 @@
     position: fixed;
     right: 650px;
     bottom: 100px;
-    animation: rotate linear;
+    /* animation: rotate ; */
 }
 
 @keyframes rotate {
@@ -40,4 +40,24 @@
     to {
         transform: rotate(150deg);
     }
+}
+
+.door {
+    position: fixed;
+    background: #6e4018;
+    height: 150px;
+    width: 100px;
+    bottom: 100px;
+    right: 425px;
+    z-index: 100;
+}
+
+.door-frame {
+    position: fixed;
+    background: #874d1b;
+    height: 164px;
+    width: 114px;
+    bottom: 100px;
+    right: 418px;
+
 }
