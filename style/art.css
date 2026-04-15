@@ -7,19 +7,41 @@
     height: 350px;
     width: 350px;
     display: flex;
-    position: absolute;
+    position: fixed;
     right: 300px;
     bottom: 100px;
+    transform: skewX(2deg);
+    transform: skewY(-3deg);
+    transform-origin: center left;
+    z-index: 2;
 }
 
-.grass {
+.grass1 {
     background: green;
-    height: 100px;
-    width: 100vw;
+    height: 110px;
+    width: 652px;
     display: flex;
     position: fixed;
-    bottom: 0px;
-    left: 0px;
+    bottom: -10px;
+    left: 715px;
+    transform: skewX(2deg);
+    transform: skewY(-3deg);
+    transform-origin: top left;
+    z-index: -1
+}
+
+.grass2 {
+    background: green;
+    height: 110px;
+    width: 720px;
+    display: flex;
+    position: fixed;
+    bottom: -10px;
+    right: 651px;
+    transform: skewX(-2deg);
+    transform: skewY(3deg);
+    transform-origin: top right;
+    z-index: -1
 }
 
 .slanted-wall {
@@ -30,16 +52,10 @@
     position: fixed;
     right: 650px;
     bottom: 100px;
-    /* animation: rotate ; */
-}
-
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(150deg);
-    }
+    transform: skewX(-2deg);
+    transform: skewY(3deg);
+    transform-origin: top right;
+    z-index: 7988;
 }
 
 .door {
@@ -47,17 +63,23 @@
     background: #6e4018;
     height: 150px;
     width: 100px;
-    bottom: 100px;
-    right: 425px;
-    z-index: 100;
+    bottom: 112px;
+    right: 420px;
+    z-index: 4;
+    transform: skewX(2deg);
+    transform: skewY(-3deg);
+    transform-origin: top right;
 }
 
 .door-frame {
     position: fixed;
     background: #874d1b;
-    height: 164px;
+    height: 158px;
     width: 114px;
-    bottom: 100px;
-    right: 418px;
-
+    bottom: 112px;
+    right: 414px;
+    transform: skewX(2deg);
+    transform: skewY(-3deg);
+    transform-origin: top right;
+    z-index: 3;
 }
