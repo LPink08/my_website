@@ -98,13 +98,25 @@
     position: absolute;
     display: flex;
     background: #6e4018;
-    height: 175px;
+    height: 200px;
     width: 315px;
-    right: 700px;
-    top: 20px;
+    right: 655px;
+    top: -8px;
     transform: skewX(5deg);
-    transform: skewY(9deg);
-    transform: rotate(5deg);
+    transform: skewY(10deg);
+    transform: rotate(12deg);
     transform-origin: bottom right;
     z-index: 78;
+}
+
+.right-roof {
+    position: absolute;
+    display: flex;
+    background: #6e4018;
+    height: 200px;
+    width: 350px;
+    right: 300px;
+    transform: skewX(2deg);
+    transform: skewY(-3deg);
+    transform-origin: center left;
 }
