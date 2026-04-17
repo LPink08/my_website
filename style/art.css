@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 .front-wall {
@@ -9,14 +10,14 @@
     display: flex;
     position: fixed;
     right: 300px;
-    bottom: 100px;
+    bottom: 75px;
     transform: skewX(2deg);
     transform: skewY(-3deg);
     transform-origin: center left;
     z-index: 2;
 }
 
-.grass1 {
+/* .grass1 {
     background: green;
     height: 110px;
     width: 652px;
@@ -42,20 +43,29 @@
     transform: skewY(3deg);
     transform-origin: top right;
     z-index: -1
+} */
+
+.grass3 {
+    background: green;
+    height: 200px;
+    width: 100vw;
+    display: flex;
+    position: absolute;
+    bottom: 0px;
 }
 
 .slanted-wall {
     background: Tan;
     height: 350px;
-    width: 350px;
+    width: 315px;
     display: flex;
     position: fixed;
     right: 650px;
-    bottom: 100px;
-    transform: skewX(-2deg);
-    transform: skewY(3deg);
+    bottom: 75px;
+    transform: skewX(-5deg);
+    transform: skewY(9deg);
     transform-origin: top right;
-    z-index: 7988;
+    z-index: 2;
 }
 
 .door {
@@ -63,7 +73,7 @@
     background: #6e4018;
     height: 150px;
     width: 100px;
-    bottom: 112px;
+    bottom: 89px;
     right: 420px;
     z-index: 4;
     transform: skewX(2deg);
@@ -76,10 +86,25 @@
     background: #874d1b;
     height: 158px;
     width: 114px;
-    bottom: 112px;
+    bottom: 87px;
     right: 414px;
     transform: skewX(2deg);
     transform: skewY(-3deg);
     transform-origin: top right;
     z-index: 3;
+}
+
+.left-roof {
+    position: absolute;
+    display: flex;
+    background: #6e4018;
+    height: 175px;
+    width: 315px;
+    right: 700px;
+    top: 20px;
+    transform: skewX(5deg);
+    transform: skewY(9deg);
+    transform: rotate(5deg);
+    transform-origin: bottom right;
+    z-index: 78;
 }

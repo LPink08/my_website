@@ -18,28 +18,45 @@ let LPaddleWidth = 20
 let LPaddleHeight = 150
 let LPaddleSpeed = 20
 let LPaddleYPosition = windowHeight / 2 - LPaddleHeight / 2
-let LPaddleXPosition = windowWidth / 2 - LPaddleWidth / 2
+let LPaddleXPosition = 70
 let LPaddleTop = LPaddleYPosition
 let LPaddleBottom = LPaddleYPosition + LPaddleHeight
 let LPaddleRight = LPaddleXPosition + LPaddleWidth
 
-setInterval(moveBall, 10)
+const RPaddle = document.createElement('div')
+document.body.appendChild(RPaddle)
+let RPaddleWidth = 20
+let RPaddleHeight = 150
+let RPaddleSpeed = 20
+let RPaddleYPosition = windowHeight / 2 - RPaddleHeight / 2
+let RPaddleXPosition = 1240
+let RPaddleTop = RPaddleYPosition
+let RPaddleBottom = RPaddleYPosition + RPaddleHeight
+let RPaddleRight = RPaddleXPosition - RPaddleWidth
 
-moveBall()
 function moveBall(){
     ballXPosition = ballXPosition + ballSpeed * ballXDirection
     ballYPosition = ballYPosition + ballSpeed * ballYDirection
+    ballTop = ballYPosition
+    ballBottom = ballYPosition + 2 * ballRadius
+    ballLeft = ballXPosition
+    LPaddleTop = LPaddleYPosition
+    LPaddleBottom = LPaddleYPosition + LPaddleHeight
+    LPaddleRight = LPaddleXPosition + LPaddleWidth
     ball.style.left = `${ballXPosition}px`
     ball.style.top = `${ballYPosition}px`
     if (ballYPosition < 0 || ballYPosition > windowHeight - 2 * ballRadius){
         ballYDirection = ballYDirection * -1
     }
-    if (ballXPosition < 0 || ballXPosition > windowWidth - ballRadius * 2){
+    if (ballXPosition < 0 || ballXPosition > windowWidth - 2 * ballRadius){
         ballXDirection = ballXDirection * -1
     }
-    // if ((ballBottom >= LPaddleTop) && (ballTop <= LPaddleBottom) && (ballLeft <= LPaddleRight) && (ballXDirection == -1)){
-    //     ballXDirection = ballXDirection * -1
-    // }
+    if ((ballBottom >= LPaddleTop) && (ballTop <= LPaddleBottom) && (ballLeft <= LPaddleRight) && (ballXDirection == -1)){
+        ballXDirection = ballXDirection * -1
+    }
+    if ((ballBottom >= RPaddleTop) && (ballTop <= RPaddleBottom) && (ballLeft >= RPaddleRight) && (ballXDirection == 1)){
+        ballXDirection = ballXDirection * -1
+    }
 }
 
 createBall()
@@ -63,29 +80,78 @@ function createLPaddle() {
     LPaddle.style.top = `${LPaddleYPosition}px`
 }
 
+createRPaddle()
+function createRPaddle() {
+    RPaddle.style.height = `${RPaddleHeight}px`
+    RPaddle.style.width = `${RPaddleWidth}px`
+    RPaddle.style.backgroundColor = "blue"
+    RPaddle.style.position = "absolute"
+    RPaddle.style.right = "50px"
+    RPaddle.style.top = `${RPaddleYPosition}px`
+}
+
+wKey = false
+sKey = false
 document.addEventListener('keydown', (event) => {
     if (event.key == 'w'){
-        if (LPaddleYPosition <= 0) {
-            LPaddlePosition = 0
-        }
-        else {
-            LPaddleYPosition = LPaddleYPosition - LPaddleSpeed
-        }
+        wKey = true
     }
     if (event.key == 's'){
-        if (LPaddleYPosition > windowHeight - LPaddleHeight) {
-            LPaddleYPosition = windowHeight - LPaddleHeight
-        }
-        else {
-            LPaddleYPosition = LPaddleYPosition + LPaddleSpeed
-        }
+        sKey = true
+    }
+})
+document.addEventListener('keyup', (event) => {
+    if (event.key == 'w'){
+        wKey = false
+    }
+    if (event.key == 's'){
+        sKey = false
+    }
+})
+
+upKey = false
+downKey = false
+document.addEventListener('keydown', (event) => {
+    if (event.key == 'ArrowUp'){
+        upKey = true
+    }
+    if (event.key == 'ArrowDown'){
+        downKey = true
+    }
+})
+document.addEventListener('keyup', (event) => {
+    if (event.key == 'ArrowUp'){
+        upKey = false
+    }
+    if (event.key == 'ArrowDown'){
+        downKey = false
+    }
+})
+
+function moveLPaddle(){
+    if (wKey == true && LPaddleYPosition > 0){
+        LPaddleYPosition = LPaddleYPosition - LPaddleSpeed
+    }
+    if (sKey == true && LPaddleYPosition < windowHeight - LPaddleHeight){
+        LPaddleYPosition = LPaddleYPosition + LPaddleSpeed
     }
     LPaddle.style.top = `${LPaddleYPosition}px`
-})
+}
+
+function moveRPaddle(){
+    if (upKey == true && RPaddleYPosition > 0){
+        RPaddleYPosition = RPaddleYPosition - RPaddleSpeed
+    }
+    if (downKey == true && RPaddleYPosition < windowHeight - RPaddleHeight){
+        RPaddleYPosition = RPaddleYPosition + RPaddleSpeed
+    }
+    RPaddle.style.top = `${RPaddleYPosition}px`
+}
 
 function animate(){
     moveBall()
     moveLPaddle()
+    moveRPaddle()
     requestAnimationFrame(animate)
 }
 animate()
