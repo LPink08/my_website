@@ -106,7 +106,7 @@
     transform: skewY(10deg);
     transform: rotate(12deg);
     transform-origin: bottom right;
-    z-index: 78;
+    z-index: -3;
 }
 
 .right-roof {
@@ -116,7 +116,14 @@
     height: 200px;
     width: 350px;
     right: 300px;
-    transform: skewX(2deg);
+    top: -8px;
+    transform: skewX(5deg);
+    transform: skewY(10deg);
+    transform: rotate(12deg);
+    transform-origin: bottom left;
+    /* transform: skewX(2deg);
     transform: skewY(-3deg);
-    transform-origin: center left;
+    transform: rotate(-9deg);
+    transform-origin: bottom right; */
+    /* z-index: -3; */
 }
