@@ -107,7 +107,9 @@
 }
 
 .background2 {
-    
+    position: fixed;
+    display: flex;
+    background: 
 }
 
 
