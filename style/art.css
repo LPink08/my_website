@@ -151,21 +151,7 @@
     transform: skewY(-3deg);
     transform-origin: top right;
     border-radius: 50%;
-}
-
-.window1-frame1 {
-    position: absolute;
-    display: flex;
-    height: 90px;
-    width: 90px;
-    background: #ffffff;
-    bottom: 295px;
-    right: 430px;
-    z-index: 5;
-    transform: skewX(2deg);
-    transform: skewY(-3deg);
-    transform-origin: top right;
-    border-radius: 50%;
+    border: 5px solid white;
 }
 
 .window2-pane {
