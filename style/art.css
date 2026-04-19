@@ -18,7 +18,7 @@
 }
 
 .grass {
-    background: green;
+    background: darkgreen;
     height: 200px;
     width: 100vw;
     display: flex;
@@ -43,6 +43,7 @@
 .door {
     position: fixed;
     background: #6e4018;
+    /* background: #111211; */
     height: 150px;
     width: 100px;
     bottom: 89px;
@@ -51,11 +52,12 @@
     transform: skewX(2deg);
     transform: skewY(-3deg);
     transform-origin: top right;
+    border: 5px solid white;
 }
 
-.door-frame {
+/* .door-frame {
     position: fixed;
-    background: #874d1b;
+    background: #ffffff;
     height: 158px;
     width: 114px;
     bottom: 87px;
@@ -64,16 +66,17 @@
     transform: skewY(-3deg);
     transform-origin: top right;
     z-index: 3;
-}
+} */
 
 .left-roof {
     position: absolute;
     display: flex;
-    background: #6e4018;
+    background:  #6e4018;
+    /* background: black; */
     height: 300px;
     width: 350px;
-    right: 670px;
-    top: -20px;
+    right: 660px;
+    top: -15px;
     transform: skewX(5deg);
     transform: skewY(10deg);
     transform: rotate(28deg);
@@ -84,10 +87,11 @@
 .right-roof {
     position: absolute;
     display: flex;
-    background: #6e4018;
+    background:  #6e4018;
+    /* background: black; */
     height: 300px;
     width: 325px;
-    right: 375px;
+    right: 400px;
     top: -55px;
     transform: skewX(5deg);
     transform: skewY(10deg);
@@ -97,19 +101,84 @@
 }
 
 .background1 {
-    position: fixed;
+    background: linear-gradient(#6a0d83, #ce4993);
+    position: absolute;
     display: flex;
-    background: LightSkyBlue;
-    height: 400px;
-    width: 405px;
-    left: 0px;
+    height: 100px;
+    width: 100vw;
+    top: 0px;
     z-index: -5;
 }
 
 .background2 {
-    position: fixed;
+    background: linear-gradient(#ce4993, #ee5d6c);
+    position: absolute;
     display: flex;
-    background: 
+    height: 100px;
+    width: 100vw;
+    top: 100px;
+    z-index: -5;
 }
 
+.background3 {
+    background: linear-gradient(#ee5d6c, #fb9062);
+    position: absolute;
+    display: flex;
+    height: 100px;
+    width: 100vw;
+    bottom: 300px;
+}
 
+.background4 {
+    background: linear-gradient(#fb9062, #eeaf61);
+    position: absolute;
+    display: flex;
+    height: 100px;
+    width: 100vw;
+    bottom: 200px;
+}
+
+.window1-pane {
+    position: absolute;
+    display: flex;
+    height: 80px;
+    width: 80px;
+    background: PaleTurquoise;
+    bottom: 300px;
+    right: 435px;
+    z-index: 6;
+    transform: skewX(2deg);
+    transform: skewY(-3deg);
+    transform-origin: top right;
+    border-radius: 50%;
+}
+
+.window1-frame1 {
+    position: absolute;
+    display: flex;
+    height: 90px;
+    width: 90px;
+    background: #ffffff;
+    bottom: 295px;
+    right: 430px;
+    z-index: 5;
+    transform: skewX(2deg);
+    transform: skewY(-3deg);
+    transform-origin: top right;
+    border-radius: 50%;
+}
+
+.window2-pane {
+    position: absolute;
+    display: flex;
+    height: 130px;
+    width: 130px;
+    background: PaleTurquoise;
+    bottom: 200px;
+    left: 490px;
+    z-index: 6;
+    transform: skewX(-5deg);
+    transform: skewY(9deg);
+    transform-origin: top right;
+    border: 5px solid white;
+}
