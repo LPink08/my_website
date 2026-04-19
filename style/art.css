@@ -154,6 +154,20 @@
     border: 5px solid white;
 }
 
+.window1-frame1 {
+    position: absolute;
+    display: flex;
+    height: 80px;
+    width: 5px;
+    background: #ffffff;
+    bottom: 298px;
+    right: 471px;
+    z-index: 8;
+    transform: skewX(2deg);
+    transform: skewY(-3deg);
+    transform-origin: top right;
+}
+
 .window2-pane {
     position: absolute;
     display: flex;
