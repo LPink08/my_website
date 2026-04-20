@@ -42,8 +42,7 @@
 
 .door {
     position: fixed;
-    background: #6e4018;
-    /* background: #111211; */
+    background: #630202;
     height: 150px;
     width: 100px;
     bottom: 89px;
@@ -52,34 +51,20 @@
     transform: skewX(2deg);
     transform: skewY(-3deg);
     transform-origin: top right;
-    border: 5px solid white;
+    border: 5px solid #520505;
 }
-
-/* .door-frame {
-    position: fixed;
-    background: #ffffff;
-    height: 158px;
-    width: 114px;
-    bottom: 87px;
-    right: 414px;
-    transform: skewX(2deg);
-    transform: skewY(-3deg);
-    transform-origin: top right;
-    z-index: 3;
-} */
 
 .left-roof {
     position: absolute;
     display: flex;
-    background:  #6e4018;
-    /* background: black; */
+    background: #630202;
     height: 300px;
     width: 350px;
-    right: 660px;
-    top: -15px;
+    right: 690px;
+    top: 40px;
     transform: skewX(5deg);
     transform: skewY(10deg);
-    transform: rotate(28deg);
+    transform: rotate(38deg);
     transform-origin: bottom right;
     z-index: -3;
 }
@@ -87,17 +72,27 @@
 .right-roof {
     position: absolute;
     display: flex;
-    background:  #6e4018;
-    /* background: black; */
+    background: #630202;
     height: 300px;
     width: 325px;
-    right: 400px;
+    right: 407px;
     top: -55px;
     transform: skewX(5deg);
     transform: skewY(10deg);
-    transform: rotate(30deg);
+    transform: rotate(31deg);
     transform-origin: bottom left;
     z-index: -3;
+}
+
+.roof-gap {
+    position: absolute;
+    display: flex;
+    background: #630202;
+    height: 50px;
+    width: 70px;
+    top: 0px;
+    right: 585px;
+
 }
 
 .background1 {
@@ -151,7 +146,7 @@
     transform: skewY(-3deg);
     transform-origin: top right;
     border-radius: 50%;
-    border: 5px solid white;
+    border: 5px solid #630202;
 }
 
 .window1-frame1 {
@@ -159,9 +154,23 @@
     display: flex;
     height: 80px;
     width: 5px;
-    background: #ffffff;
+    background: #630202;
     bottom: 298px;
     right: 471px;
+    z-index: 8;
+    transform: skewX(2deg);
+    transform: skewY(-3deg);
+    transform-origin: top right;
+}
+
+.window1-frame2 {
+    position: absolute;
+    display: flex;
+    height: 5px;
+    width: 80px;
+    background: #630202;
+    bottom: 335px;
+    right: 435px;
     z-index: 8;
     transform: skewX(2deg);
     transform: skewY(-3deg);
@@ -180,5 +189,34 @@
     transform: skewX(-5deg);
     transform: skewY(9deg);
     transform-origin: top right;
-    border: 5px solid white;
+    border: 5px solid #630202;
+}
+
+.window2-frame1 {
+    position: absolute;
+    display: flex;
+    background: #630202;
+    height: 130px;
+    width: 5px;
+    bottom: 210px;
+    left: 550px;
+    z-index: 8;
+    transform: skewX(-5deg);
+    transform: skewY(9deg);
+    transform-origin: top right;
+}
+
+.window2-frame2 {
+    position: absolute;
+    display: flex;
+    background: #630202;
+    height: 50px;
+    width: 130px;
+    bottom: 284px;
+    left: 490px;
+    z-index: 9;
+    transform: skewX(5deg);
+    transform: skewY(10deg);
+    transform: rotate(10deg);
+    transform-origin: top right;
 }
